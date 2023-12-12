@@ -1,0 +1,36 @@
+<style>
+    
+    #countdown {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+</style>
+<div id="countdown"></div>
+
+<script>
+    // Tính thời gian còn lại đến ngày Giáng sinh
+function countdownToChristmas() {
+  const christmasDate = new Date('2023-12-25T00:00:00');
+  const currentDate = new Date();
+
+  const difference = christmasDate.getTime() - currentDate.getTime();
+
+  // Tính số ngày, giờ, phút và giây còn lại
+  const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+  // Hiển thị thời gian còn lại trong phần tử HTML có ID là "countdown"
+  document.getElementById('countdown').innerHTML = `Thời gian còn lại đến Giáng sinh:<br>${days} ngày, ${hours} giờ, ${minutes} phút, ${seconds} giây`;
+}
+
+// Gọi hàm để bắt đầu đếm ngược
+countdownToChristmas();
+
+// Cập nhật thời gian mỗi giây
+setInterval(countdownToChristmas, 1000);
+
+</script>
