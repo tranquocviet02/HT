@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+#cart {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 300px;
+  float: right;
+}
+
+#cartItems {
+  list-style: none;
+  padding: 0;
+}
+
+#cartItems li {
+  margin-bottom: 5px;
+}
+
+  </style>
+  <title>Shopping Cart</title>
+</head>
+<body>
+  <form id="registrationForm">
+    <label for="itemName">Item Name:</label>
+    <input type="text" id="itemName" name="itemName" required>
+
+    <label for="quantity">Quantity:</label>
+    <input type="number" id="quantity" name="quantity" min="1" required>
+
+    <button type="button" onclick="addToCart()">Add to Cart</button>
+  </form>
+
+  <div id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cartItems"></ul>
+    <p>Total: $<span id="totalPrice">0.00</span></p>
+  </div>
+
+  <script>
+    let cart = [];
+let totalPrice = 0;
+
+function addToCart() {
+  const itemName = document.getElementById("itemName").value;
+  const quantity = parseInt(document.getElementById("quantity").value);
+
+  if (quantity > 0) {
+    const itemPrice = calculateItemPrice(quantity);
+    const cartItem = { itemName, quantity, itemPrice };
+
+    cart.push(cartItem);
+    updateCart();
+    resetForm();
+  } else {
+    alert("Please enter a valid quantity.");
+  }
+}
+
+function calculateItemPrice(quantity) {
+  // Add your logic to calculate the item price based on quantity
+  // For simplicity, let's assume each item costs $10
+  const itemPrice = 10;
+  return quantity * itemPrice;
+}
+
+function updateCart() {
+  const cartItemsElement = document.getElementById("cartItems");
+  const totalElement = document.getElementById("totalPrice");
+
+  cartItemsElement.innerHTML = "";
+  totalPrice = 0;
+
+  cart.forEach(item => {
+    const listItem = document.createElement("li");
+    listItem.textContent = `${item.itemName} x ${item.quantity} - $${item.itemPrice.toFixed(2)}`;
+    cartItemsElement.appendChild(listItem);
+
+    totalPrice += item.itemPrice;
+  });
+
+  totalElement.textContent = totalPrice.toFixed(2);
+}
+
+function resetForm() {
+  document.getElementById("itemName").value = "";
+  document.getElementById("quantity").value = "";
+}
+
+  </script>
+</body>
+</html>
