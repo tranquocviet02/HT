@@ -1,10 +1,4 @@
-var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 8, // Số lượng slide hiển thị trên thanh trượt
-    spaceBetween: 10, // Khoảng cách giữa các slide
-    freeMode: true // Chế độ tự do (có thể cuộn không giới hạn)
-    // freeMode: true,
-    // watchSlidesProgress: ,
-});
+
 var swiper2 = new Swiper(".mySwiper2", {
     loop: true,
     spaceBetween: 10,
@@ -16,9 +10,9 @@ var swiper2 = new Swiper(".mySwiper2", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-    thumbs: {
-        swiper: swiper,
-    },
+    //thumbs: {
+       // swiper: swiper,
+    //},
 });
 
 
