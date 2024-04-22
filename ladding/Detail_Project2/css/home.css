@@ -1,3 +1,38 @@
+
+.box-error-type {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    grid-gap: 20px;
+    width: 100%;
+}
+
+.box-error-type .error-item {
+    display: flex;
+    padding: 20px 30px;
+    border-radius: 6px;
+    justify-content: center;
+    justify-items: center;
+    color: #000
+}
+
+.box-error-type .error-item:hover {
+    color: #0f4a3e
+}
+
+.box-error-type .hcare-icon:before {
+    font-family: 'hcare' !important
+}
+
+.box-error-type .hcare-icon {
+    font-size: 30px;
+    margin-right: 12px
+}
+
+.box-error-type strong {
+    font-size: 22px
+}
+
+
 /*css trang chủ */
 
 /*banerr box*/
@@ -215,7 +250,7 @@
 
 /*box banner*/
 .section .box-baner{margin:20px 0}
-.section .box-head{background:#009981;margin-bottom:20px;display:inline-block;height:41px;overflow:hidden;border-radius:5px}
+.section .box-head{background:#009981;margin-bottom:20px;display:inline-block;height:38px;overflow:hidden;border-radius:5px}
 .box-content .logos .logo-title{background:#FFFFFF}
 .section .box-head h4 a{color:white}
 .section .box-head h4{padding:7px 40px 7px 20px;margin:0 0 0 60px;background:#00483d;color:#fff;font-size:20px;text-transform:uppercase;/* border-radius:10px;*/}
