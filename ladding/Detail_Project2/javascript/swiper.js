@@ -1,5 +1,5 @@
 
-var swiper2 = new Swiper(".mySwiper2", {
+var swiper2 = new Swiper(".mySwiper", {
     loop: true,
     spaceBetween: 10,
     pagination: {
