@@ -22,6 +22,7 @@ var swiper2 = new Swiper(".mySwiper2", {
 });
 
 
+
 //    var mainSwiper = new Swiper(".mySwiper", {
 //    slidesPerView: 8,
 //    spaceBetween: 10,
