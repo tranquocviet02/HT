@@ -1,0 +1,229 @@
+/*css trang chủ */
+
+/*banerr box*/
+.section .box-baner{margin:20px 0}
+.section .box-head{background:#009981;margin-bottom:20px;display:inline-block;height:41px;overflow:hidden;border-radius:5px}
+.box-content .logos .logo-title{background:#FFFFFF}
+.section .box-head h4 a{color:white}
+.section .box-head h4{padding:7px 40px 7px 20px;margin:0 0 0 60px;background:#00483d;color:#fff;font-size:20px;text-transform:uppercase;/* border-radius:10px;*/}
+.box-baner:after{content:" ";border-top:41px solid #009981;border-right:16px solid #00483d;margin-left:44px}
+
+/*list sản phẩm*/
+.list-product{position:relative}
+.list-product .product-item{position:relative}
+.site-grid{width:100%;grid-gap:10px;display:grid;grid-template-columns:repeat(10,minmax(0,1fr));-webkit-hyphens:auto;hyphens:auto;border-radius:10px}
+.site-grid .site-goods-sku{grid-column:span 2;padding:10px;border-radius:10px;background:#FFFFFF}
+.site-grid .site-goods-sku:hover{z-index:2;box-shadow:0 0 10px 1px white}
+.list-product .product-item .img{overflow:hidden;width:100%;padding:5px;border-radius:10px;justify-content:center;display:flex}
+.list-product .product-item .img a{object-fit:cover;object-position:center;width:100%;max-width:150px}
+.list-product .product-item .info{margin-top:5px;padding:0 10px 15px 10px;text-align:center}
+.list-product .product-item .info .title{color:#000;font-weight:bold;display:block;font-size:15px;line-height:20.43px}
+.list-product .product-item .info .price strong{font-size:16px;color:#fd475a;font-size:20px;font-weight:700;line-height:23.87px}
+.list-product .product-item .note{margin:0;padding:5px 10px;text-align:left}
+.list-product .product-item .bag{display:inline-block;background:#FD475A 0% 0% no-repeat padding-box;box-shadow:0 4px 6px #00000029;border-radius:3px;padding:3px 5px;color:#fff;font-size:12px;font-weight:700;line-height:15.96px;text-align:left}
+.list-product .product-item .note label{font-weight:300;line-height:14.32px;text-align:left}
+.list-product .product-item .note strong{font-weight:700;line-height:14.32px;text-align:left}
+
+.header.scroll nav ul.root li a:hover:after{background:#FCB040}
+.header.scroll nav ul.root li a:focus:after{background:#FCB040}
+.list-product .product-item .promote{border-radius:5px;background-image:linear-gradient(#00917A,#079780);padding:2px;box-shadow:0 4px 6px #00000029;margin:3px;position:absolute;top:12%;display:none;opacity:0;visibility:hidden;-webkit-transition:opacity 200ms,visibility 200ms;transition:opacity 200ms,visibility 200ms;color:#333}
+.list-product .product-item .promote a{color:#222}
+.list-product .product-item .promote ul{list-style:none;background:#fff;border-radius:4px;margin:0;padding:10px 10px 5px 10px;text-align:left}
+.list-product .product-item .promote ul li{padding-bottom:5px;font-size:11px}
+.list-product .product-item:hover .promote{display:block;visibility:visible;opacity:0.9;animation:fade 1s}
+
+
+/*css trang chi tiết*/
+
+.navbar-burger,blockquote,body,dd,dl,dt,fieldset,figure,h1,h2,h3,h4,h5,h6,hr,html,iframe,legend,li,ol,p,pre,textarea,ul{margin:0}
+
+/*thông tin sản phẩm*/
+.product-detail .product-details-container{display:flex;align-items:center;justify-content:center;gap:20px;width:100%;padding:50px 0}
+.product-detail .product-details-container .product-info{width:100%;display:flex;flex-direction:column;gap:10px}
+.product-detail .product-details-container .product-image{width:100%;max-width:496px}
+
+.product-info .box-linked h5{margin:0;font-size:15px;font-weight:600;line-height:20.43px}
+.box-linked{margin-bottom:5px;display:flex;flex-direction:column;gap:10px}
+.box-linked .list-linked{display:flex;flex-wrap:wrap;width:100%}
+.box-linked .list-linked.price{gap:12px;align-items:center}
+.box-linked .list-linked.price h5{font-size:24px;font-weight:700;line-height:32.68px;text-align:left}
+.box-linked .list-linked.price h4{font-size:15px;font-weight:400;line-height:20.43px;text-align:left;text-decoration:line-through}
+.box-linked .list-linked .item-linked{align-items:center;background:#fff;border:1px solid #d1d5db;border-radius:8px;color:#444;display:flex;flex-direction:column;font-size:12px;gap:3px;justify-content:center;margin:0 0 10px;overflow:hidden;padding:13px 32.5px;position:relative;-webkit-text-decoration:none;text-decoration:none}
+.box-linked .list-linked .item-linked.item-box-dv{padding:12px 11px 12px 11px;gap:11px;color:white}
+.box-linked .list-linked .item-linked.item-box-dv.button-green{background:#00957C;border:none}
+.box-linked .list-linked .item-linked.item-box-dv.button-red{background:#FD475A;border:none}
+.box-linked .list-linked .item-linked div{-webkit-line-clamp:3;-webkit-box-orient:vertical;display:-webkit-box;font-weight:600;overflow:hidden;text-align:center;width:100%}
+.box-linked .list-linked .item-linked a span,.box-linked .list-linked .item-linked a strong{color:#444;text-align:left}
+.box-linked .list-linked .item-linked a img{height:35px;width:35px}
+.box-linked .list-linked .item-linked:hover{border:1px solid #00957C}
+.box-linked .list-linked .item-linked.active{border:1px solid #00957C}
+.box-linked .list-linked .item-linked.active:before {color: #FFFFFF;content: "✓";position: absolute;font-size: 10px;right: 4px;bottom: 2px;z-index: 2; font-weight: 500;}
+.box-linked .list-linked .item-linked.active:after{background-color:#00957C;color:#00957C;content:"✓";font-size:12px;height:56px;right:-7px;padding-bottom:3px;padding-left:4px;padding-right:16px;padding-top:14px;position:absolute;bottom:-44px;width:15px;transform:rotate(46deg)}
+.box-linked .list-linked .item-linked:not(:nth-child(3n)){margin-right:10px}
+.box-linked .list-linked .disabled{pointer-events:none}
+.box-linked .box-title p{color:#444;font-size:14px;font-weight:700;margin-bottom:10px}
+.box-linked .list-linked.price h2{margin:0;font-size:24px;font-weight:700;line-height:32.68px;text-align:left}
+.box-linked .list-linked.price h4{margin:0;font-size:15px;font-weight:400;line-height:20.43px;text-align:left}
+
+
+.note-info .banner-title{padding:13px 22px 13px 22px;gap:8px;background:#00957C;color:white}
+.note-info .banner-title h5{margin:0;font-size:15px;font-weight:600;line-height:20.43px;text-align:left}
+.note-info .note-info-detail{margin:0;font-size:13px;font-weight:400;line-height:17.7px;text-align:left;padding:10px;background:white}
+.note-info .note-info-detail a{margin:0;font-size:13px;font-weight:600;line-height:17.7px;text-align:left}
+
+
+.button-add{text-align:center;padding:0.5rem}
+.product-info .note-info{border:1px solid #00957C;margin-bottom:15px;border-radius:10px;overflow:hidden}
+.product-info .button-add h4{margin:0;font-size:15px;font-weight:700;line-height:20.43px;text-align:center}
+.product-info .button-add p{margin:0;font-size:13px;font-weight:400;line-height:17.7px;text-align:center}
+.product-info .button-add a{color:white}
+
+
+.product-detail .block-content-product{display:flex;justify-content:space-between;margin:10px auto}
+.block-content-product .block-content-product-left{width:830px;background:#fff;border-radius:10px;box-shadow:0 1px 2px 0 rgba(60,64,67,.1),0 2px 6px 2px rgba(60,64,67,.15)}
+.block-detail-product .block-content-product .block-content-product-right{width:calc(100% - 830px)}
+
+/*div xem thêm*/
+.cps-block-content{border-radius:10px;display:block;margin-right:auto;max-height:700px;min-height:0;overflow:hidden;padding:15px;position:relative;text-align:justify}
+.cps-block-content p{font-size:15px;font-weight:500;line-height:1.5;margin:0 0 10px;text-align:justify}
+
+/*nút xem thêm*/
+.view-more-container{padding:8px 10px;text-align:center}
+.view-more-container a{text-transform:uppercase;font-weight:bold;font-size:15px;color:#00957C}
+.view-more-container a:hover{color:#00483d}
+
+/*cấu hình chi tiết*/
+.product-detail .block-content-product .block-content-product-right{width:calc(100% - 830px)}
+.cps-block-technicalInfo{border-radius:10px;background:#fff;box-shadow:0 1px 2px 0 rgba(60,64,67,.1),0 2px 6px 2px rgba(60,64,67,.15);max-width:370px}
+.cps-block-technicalInfo .technical-content{border:1px solid #e5e7eb;border-radius:10px;padding:0;margin:15px 0;overflow:hidden}
+.cps-block-technicalInfo .technical-content li:nth-child(odd){background-color:#f2f2f2}
+.cps-block-technicalInfo .technical-content .technical-content-item{font-size:14px;list-style:none}
+.cps-block-technicalInfo .technical-content .technical-content-item p:first-child{width:40%}
+.cps-block-technicalInfo .technical-content .technical-content-item a{color:#4a4a4a}
+.cps-block-technicalInfo .technical-content .technical-content-item div{width:50%}
+.button-configuration{background-color:#fff;border-color:#dbdbdb;border-width:1px;color:#363636;cursor:pointer;justify-content:center;padding:calc(0.5em - 1px) 1em;text-align:center;white-space:nowrap}
+.cps-block-technicalInfo .button-configuration{border-radius:10px;box-shadow:0 1px 2px 0 rgba(60,64,67,.1),0 2px 6px 2px rgba(60,64,67,.15);font-size:14px;gap:5px;height:35px;transition:background-color .5s ease;width:100%}
+.cps-block-technicalInfo .button-configuration:hover{background-color:#fef2f2;border:1px solid #c52927;color:#c52927;transition:background-color .5s ease-out}
+.cps-block-technicalInfo .button-configuration:hover .icon-svg svg{fill:#c52927}
+
+/*Model cấu hình chi tiết*/
+.block-content-product-right .product-specs-button{bottom:-20px;align-items:center;justify-content:center;display:flex;margin:0 auto;background:#fdfdfe 0% 0% no-repeat padding-box;box-shadow:0 3px 6px #00000029;border-radius:10px;padding:2px 50px;font-size:15px;color:#191919}
+.block-content-product-right .product-specs-button span{background:transparent linear-gradient(180deg,#009a82 0%,#00483d 100%) 0% 0% no-repeat padding-box;-webkit-background-clip:text;-webkit-text-fill-color:transparent;font-size:26px;margin-right:5px}
+.block-content-product-right .product-specs-button strong{margin-top:-2px}
+.modal{top:0;left:0;align-items:center;display:none;flex-direction:column;justify-content:center;overflow:hidden;position:fixed;z-index:40;width:100%;height:100%;outline:0;max-width:unset}
+.cps-block-technicalInfo .modal{z-index:1001}
+.cps-block-technicalInfo .modal .modal-card-body{padding:0;background-color:#fff;flex-grow:1;flex-shrink:1;overflow:auto;margin:0}
+.cps-block-technicalInfo .modal .modal-card-body .modal-content{background-color:#fff;height:auto;overflow:visible;overflow:initial;width:100%;border:none}
+.cps-block-technicalInfo .modal .modal-card-body .modal-content .technical-title-modal{background-color:#d70018;height:50px;width:100%}
+.cps-block-technicalInfo .modal .modal-card-body .modal-content .technical-title-modal button{background-color:transparent;background-color:initial;border:none;border-radius:10px;color:#fff;font-size:16px;font-weight:600;gap:5px;outline:none;padding:5px}
+.cps-block-technicalInfo .modal .modal-card-body .modal-content .technical-title-modal button:hover{background-color:#9b191e;cursor:pointer}
+.cps-block-technicalInfo .modal .modal-card-body .modal-content .technical-content-modal{padding-bottom:10px;width:100%;padding:0;list-style:none}
+.cps-block-technicalInfo .modal .modal-card-body .modal-content .technical-content-modal .technical-content-modal-item .modal-item-description{border:1px solid #efefef;border-radius:10px;font-size:14px;overflow:hidden}
+.cps-block-technicalInfo .modal .modal-card-body .modal-content .technical-content-modal .technical-content-modal-item .modal-item-description div p:first-child{width:30%}
+.cps-block-technicalInfo .modal .modal-card-body .modal-content .technical-content-modal .technical-content-modal-item .modal-item-description div div:last-child{width:60%}
+.cps-block-technicalInfo .modal .modal-card-body .modal-content .technical-content-modal .technical-content-modal-item .modal-item-description div:nth-child(odd){background-color:#efefef}
+.cps-block-technicalInfo .modal .modal-card-foot .close-button-modal{background:linear-gradient(90deg,rgba(0,143,119,1) 20%,rgba(16,74,62,1) 100%);border:none;border-radius:10px;color:#fff;font-size:16px;font-weight:600;outline:none;padding:3px 10px;text-align:center;justify-content:center;height:35px}
+@media only screen and (min-width:541px)and (max-width:768px){
+  .cps-block-technicalInfo{margin:0 0 10px!important;max-width:768px;padding:0 10px;width:100%}
+  .cps-block-technicalInfo .modal .modal-content{width:100%}
+}
+@media only screen and (max-width:540px){
+  .cps-block-technicalInfo{margin-left:0!important;max-width:100%}
+  .cps-block-technicalInfo .modal .modal-content{margin:0}
+}
+
+/*Model*/
+.modal{padding:10px}
+.modal .modal-card{max-width:600px;width:100%}
+@media only screen and (max-width:640px){
+.modal .modal-card{max-width:unset;width: calc(100% - 40px);}
+}
+.modal-card{display:flex;flex-direction:column;overflow:auto;-ms-overflow-y:visible}
+.modal .modal-card header.modal-card-head{z-index:auto;position:static;top:auto;padding-left:1rem;padding-right:1rem;align-items:center;display:flex;flex-shrink:0;justify-content:flex-start;position:relative;border-bottom:1px solid #dbdbdb;border-top-left-radius:6px;border-top-right-radius:6px;background:linear-gradient(90deg,rgba(0,143,119,1) 20%,rgba(16,74,62,1) 100%);width:auto}
+.modal .modal-card header.modal-card-head p.modal-card-title{color:#fff;font-size:18px;font-weight:600}
+.modal .modal-card section.modal-card-body form#commentForm{display:flex;flex-flow:column}
+.modal .modal-card section.modal-card-body form#commentForm input,.modal .modal-card section.modal-card-body form#commentForm select{border:1px solid #e4e4e4;border-radius:10px;box-shadow:none;font-size:14px;height:34px;margin-bottom:10px;padding:5px 10px;width:100%}
+.modal .modal-card section.modal-card-body form#commentForm input#email_field,.modal .modal-card section.modal-card-body form#commentForm select#email_field{margin-bottom:0}
+.modal .modal-card section.modal-card-body form#commentForm .recaptcha{margin-top:10px;text-align:center}
+.modal .modal-card section.modal-card-body form#commentForm .recaptcha .error-text{color:#d70018}
+.modal .modal-card section.modal-card-body form#commentForm .recaptcha > div > div{margin:auto}
+.modal .modal-card footer.modal-card-foot button{background-color:#d70018;color:#fff;transition:.3s;width:100%}
+.modal .modal-card footer.modal-card-foot button:focus,.modal .modal-card footer.modal-card-foot button:hover{background:linear-gradient(90deg,rgba(0,143,119,1) 20%,rgba(16,74,62,1) 100%);box-shadow:none}
+.modal.is-active{transform:scale(1)}
+.modal.is-active{display:flex;background:rgba(0,0,0,.7)}
+.modal-card-foot{border-bottom-left-radius:6px;border-bottom-right-radius:6px;border-top:1px solid #dbdbdb}
+.modal-card-foot .button:not(:last-child){margin-right:.5em}
+.modal-card-foot,.modal-card-head{align-items:center;background-color:#f5f5f5;display:flex;flex-shrink:0;justify-content:flex-start;padding:10px;position:relative}
+.modal-card-head{border-bottom:1px solid #dbdbdb;border-top-left-radius:6px;border-top-right-radius:6px}
+.modal-card-title{color:#363636;flex-grow:1;flex-shrink:0;font-size:1.5rem;line-height:1}
+.modal-card-foot{border-bottom-left-radius:6px;border-bottom-right-radius:6px;border-top:1px solid #dbdbdb}
+
+
+/*text cấu hình chi tiết*/
+.title{color:#363636;font-size:2rem;font-weight:600;line-height:1.125}
+.title strong{color:inherit;font-weight:inherit}
+.title:not(.is-spaced) + .subtitle{margin-top:-1.25rem}
+.title.is-1{font-size:3rem}
+.title.is-2{font-size:2.5rem}
+.title.is-3{font-size:2rem}
+.title.is-4{font-size:1.5rem}
+.title.is-5{font-size:1.25rem}
+.title.is-6{font-size:1rem}
+.title.is-7{font-size:.75rem}
+.subtitle{color:#4a4a4a;font-size:1.25rem;font-weight:400;line-height:1.25}
+.subtitle strong{color:#363636;font-weight:600}
+.subtitle:not(.is-spaced) + .title{margin-top:-1.25rem}
+.subtitle.is-1{font-size:3rem}
+.subtitle.is-2{font-size:2.5rem}
+.subtitle.is-3{font-size:2rem}
+.subtitle.is-4{font-size:1.5rem}
+.subtitle.is-5{font-size:1.25rem}
+.subtitle.is-6{font-size:1rem}
+.subtitle.is-7{font-size:.75rem}
+
+/*khách hàng idol*/
+.testimonial-slider{position:relative}
+.testimonial-slider .owl-dots{display:none}
+.testimonial-slider .owl-nav .owl-prev{position:absolute;top:40%;left:-45px}
+.testimonial-slider .owl-nav .owl-prev span{display:none}
+.testimonial-slider .owl-nav .owl-prev:after{content:'\0050';font-family:'hoangha';font-size:10px;background:#E3E3E3;width:50px;height:30px;padding-top:18px;border-radius:30px;display:block;color:#888;border:1px solid #E3E3E3}
+.testimonial-slider .owl-nav .owl-next{position:absolute;top:40%;right:-45px}
+.testimonial-slider .owl-nav .owl-next span{display:none}
+.testimonial-slider .owl-nav .owl-next:after{content:'\0053';font-family:'hoangha';font-size:10px;background:#E3E3E3;width:43px;height:30px;padding-top:18px;border-radius:30px;display:block;color:#888;border:1px solid #E3E3E3;padding-left:5px}
+.testimonial-slider .owl-nav .owl-prev:hover:after,.testimonial-slider .owl-nav .owl-next:hover:after{background:#91919180}
+.testimonial{background:#FFFFFF 0% 0% no-repeat padding-box;box-shadow:0 4px 6px #00000029;border-radius:8px;padding:25px 0}
+.testimonial-item{float:left}
+.testimonial .item{display:flex;padding:0 15px}
+.testimonial .item .img{width:220px;border-radius:8px;margin-right:20px}
+.testimonial .item .img img{border-radius:8px;width:220px}
+.testimonial .item h3{color:#191919;font-size:22px;font-weight:bold;margin:0 0 5px 0}
+.testimonial .item h4{color:#009981;font-size:14px;font-style:italic;margin:0 0 5px 0}
+.testimonial .item .note{font-size:14px;color:#191919;text-align:justify}
+
+
+
+/*form*/
+.price-form h2{margin:0;font-size:24px;font-weight:700;line-height:32.68px;text-align:left}
+.price-form h4{margin:0;font-size:15px;font-weight:400;line-height:20.43px;text-align:left}
+
+.btn-register{border:none;border-radius:20px;padding:10px 40px;background: #00483D;color:#fff;font-size: 15px;font-weight: 700;line-height: 18.15px;text-align: left;}
+.btn-register:hover{background: #163430;}
+
+.section .box-baner {
+    margin: 20px 0
+}
+
+/*box banner*/
+.section .box-baner{margin:20px 0}
+.section .box-head{background:#009981;margin-bottom:20px;display:inline-block;height:41px;overflow:hidden;border-radius:5px}
+.box-content .logos .logo-title{background:#FFFFFF}
+.section .box-head h4 a{color:white}
+.section .box-head h4{padding:7px 40px 7px 20px;margin:0 0 0 60px;background:#00483d;color:#fff;font-size:20px;text-transform:uppercase;/* border-radius:10px;*/}
+.box-baner:after{content:" ";border-top:41px solid #009981;border-right:16px solid #00483d;margin-left:44px}
+
+
+/*Thanh Scroll*/
+
+::-webkit-scrollbar{width:5px;height:5px}
+::-webkit-scrollbar-thumb{background-color:#6a737a;border-radius:3px}
+::-webkit-scrollbar-track{box-shadow:inset 0 0 4px rgba(0,0,0,.3);border-radius:3px}
