@@ -107,6 +107,20 @@
 	}
 }
 
+.container-section{
+	width: 100%;
+	max-width: 1200px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+@media (max-width:640px) {
+	.container-section{
+		max-width: 640px;
+	}
+}
 
 .h1{
 	font-size: 1.5em;

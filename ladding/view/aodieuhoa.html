@@ -1,0 +1,67 @@
+<link rel="stylesheet" href="../Detail_Project2/css/bootstrap.min.css">
+<main class="main-content">
+    <section class="container-section">
+        <div class="w-100 swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <img class="w-100 swiper-slide"
+                     src="~/Content/tab-s6/img/desktop/3.png" alt="">
+                <img class="w-100 swiper-slide"
+                     src="~/Content/tab-s6/img/desktop/1.png?@DateTime.Now" alt="">
+                <img class="w-100 swiper-slide"
+                     src="~/Content/tab-s6/img/desktop/2.png?@DateTime.Now" alt="">
+            </div>
+            <button class="start_css swiper-button-prev" type="button" onclick="plusDivs_accessory(-1)"
+                    tabindex="0" aria-label="Previous slide" aria-controls="product-container-compare">
+                <svg class="start_css" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                     viewBox="0 0 50 50" fill="none">
+                    <rect width="50" height="50" rx="25" fill="#615f5f"></rect>
+                    <path d="M31 13L19 25L31 37" stroke="white" stroke-width="3"></path>
+                </svg>
+            </button>
+            <button class="start_css swiper-button-next" type="button" onclick="plusDivs_accessory(1)"
+                    tabindex="0" aria-label="Next slide" aria-controls="product-container">
+                <svg class="start_css" xmlns="http://www.w3.org/2000/svg" width="50" height="50"
+                     viewBox="0 0 50 50" fill="none">
+                    <rect width="50" height="50" rx="25" fill="#615f5f"></rect>
+                    <path d="M19 37L31 25L19 13" stroke="white" stroke-width="3"></path>
+                </svg>
+            </button>
+
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+</main>
+
+
+<script src="~/Content/tab-s6/js/swiper-bundle.min.js?@DateTime.Now"></script>
+
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 8, // Số lượng slide hiển thị trên thanh trượt
+    spaceBetween: 10, // Khoảng cách giữa các slide
+    freeMode: true // Chế độ tự do (có thể cuộn không giới hạn)
+    // freeMode: true,
+    // watchSlidesProgress: ,
+});
+var swiper2 = new Swiper(".mySwiper2", {
+    zoom: true,
+    loop: true,
+    spaceBetween: 10,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+        swiper: swiper,
+    },
+    // autoplay: {
+    //       delay: 10000, // Thời gian chờ giữa các slide (miligiây)
+    //       disableOnInteraction: false, // Tự động dừng khi người dùng tương tác với slider
+    //   },
+});
+</script>
